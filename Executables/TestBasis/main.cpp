@@ -1,6 +1,18 @@
 #include <iostream>
 
-void main()
+#include <Basis/Testing/environment.h>
+#include <Basis/logger.h>
+
+basis::Logger logger("basis_tests");
+
+void dummy()
 {
-    std::cout << "empty app" << std::endl;
+    logger.print("dummy test performed");
+}
+
+int main()
+{
+    basis::testing::Statistics statistics;
+    TEST(dummy);
+    return 0;
 }
