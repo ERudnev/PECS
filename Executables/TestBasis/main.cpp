@@ -7,7 +7,7 @@ basis::Logger logger("basis_tests");
 
 void dummy()
 {
-    logger.print("dummy test performed");
+    logger.print("dummy test performed...");
 }
 
 int main()
