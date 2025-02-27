@@ -32,7 +32,7 @@ namespace basis::testing {
 	bool compare_operation(const T& lhs, const K& rhs) { return lhs == rhs; }
 
 	template<typename T>
-	requires std::is_floating_point<T>
+	requires std::is_floating_point_v<T>
 	bool compare_operation(const float& lhs, const float& rhs) { return basis::math::equal<T>(lhs, rhs); }
 
 }
